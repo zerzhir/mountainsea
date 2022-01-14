@@ -1,0 +1,95 @@
+@import '~ant-design-vue/es/style/themes/default.less';
+
+html,
+body,
+#app, #root {
+  height: 100%;
+}
+h3{
+  color: #fff;
+  u{
+    text-decoration: none;
+  }
+}
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout.layout-basic {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  // min-width:1440px;
+  width: 100%;
+  font-family: Manrope;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e5e5e5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.clearfix {
+	zoom: 1;
+  width: 100%;
+	&:after {
+		content: '.';
+		display: block;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #f8f8f8;
+}
+
+::-webkit-scrollbar {
+	width: 8px !important;
+	height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #dddddd;
+	background-clip: padding-box;
+	min-height: 28px;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #cccccc;
+}
+input{
+  background: #ffffff;
+  outline:none;
+}
+.ant-input::placeholder {
+  color: #666;
+}
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus {
+// 	box-shadow: 0 0 0px 1000px white inset;
+// 	border-radius: 5px;
+// 	border: none;
+// }
+.ant-input-lg {
+  font-size: 14px;
+}
+.ant-modal-body{
+  padding: 0;
+}
+.btn{
+  cursor: pointer;
+}
