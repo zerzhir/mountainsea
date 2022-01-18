@@ -3,7 +3,7 @@
     <a-row class="row row-header">
       <div class="container header">
         <div class="logo" @click="linkHome" />
-        <div class="menu">
+        <div class="menu" v-if="!isMobile">
           <a-anchor :affix="false">
             <template v-for="(item, index) in menuList">
               <a-anchor-link
@@ -16,7 +16,7 @@
           </a-anchor>
         </div>
         <div class="search">
-          <a href="https://discord.gg/TVY2MapTxV" target="blank">
+          <a href="https://discord.gg/cMeSWKQ66p" target="blank">
             <z-icon
               type="icon-discord"
               :style="{
@@ -34,8 +34,8 @@
               }"
             />
           </a>
-
-          <!-- <a-icon
+          <template v-if="!isMobile">
+            <!-- <a-icon
             type="bell"
             theme="filled"
             :style="{
@@ -43,17 +43,51 @@
               fontSize: '23px'
             }"
           /> -->
-          <a-tooltip
+            <!-- <a-tooltip
             placement="topLeft"
             title="点击退出"
             v-if="account.accountId"
           ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
-          >
-          <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button>
+          > -->
+            <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
+            <a href="https://wallet.near.org" target="_blank"><a-button type="primary">注册NEAR钱包</a-button></a>
+          </template>
+          <a-icon
+            type="bars"
+            :style="{
+              color: '#D49101',
+              fontSize: '26px',
+              marginTop: '-6px'
+            }"
+            @click="toggleDrawer"
+            v-if="isMobile"
+          />
         </div>
       </div>
+      <a-drawer :visible="showDrawer" placement="right" @close="toggleDrawer">
+        <div class="menu menu-drawer">
+          <a-anchor :affix="false" :showInkInFixed="false">
+            <template v-for="(item, index) in menuList">
+              <a-anchor-link
+                :key="index"
+                :href="item.path"
+                :title="item.name"
+                v-if="(item.is_login && wallet.signedIn) || !item.is_login"
+              />
+            </template>
+          </a-anchor>
+          <!-- <a-tooltip
+            placement="topLeft"
+            title="点击退出"
+            v-if="account.accountId"
+          ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
+          > -->
+          <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
+          <a href="https://wallet.near.org" target="_blank"><a-button type="primary">注册NEAR钱包</a-button></a>
+        </div>
+      </a-drawer>
     </a-row>
-    <div style="min-height: 600px">
+    <div :style="isMobile?'':'min-height: 600px'">
       <router-view />
     </div>
     <buymore v-if="$route.name !== 'Index'" />
@@ -75,6 +109,7 @@ export default {
   mixins: [deviceMixin],
   data () {
     return {
+      showDrawer: false,
       menuList: [
         {
           name: '详情',
@@ -133,6 +168,9 @@ export default {
   },
   methods: {
     fileUrl,
+    toggleDrawer () {
+      this.showDrawer = !this.showDrawer
+    },
     linkHome () {
       this.$router.push('/')
     },
@@ -213,6 +251,58 @@ export default {
       font-weight: 700;
       margin-left: 20px;
     }
+  }
+}
+</style>
+<style lang="less">
+.mobile {
+  .row-header{
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  .header {
+    height: 45px;
+    line-height: 45px;
+    margin-top: 0;
+    .logo {
+      height: 35px;
+      width: 130px;
+      background-size: contain;
+    }
+  }
+}
+.menu-drawer {
+  padding: 20px;
+  .ant-anchor-wrapper {
+    background: none;
+    a {
+      font-size: 16px;
+      color: #d59101;
+      padding: 0 20px;
+      font-weight: 600;
+      text-align: left;
+      display: inline-block;
+      width: 100%;
+    }
+    .ant-anchor {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .ant-anchor-ink {
+      display: none;
+    }
+    .ant-anchor-link {
+      width: 100%;
+      line-height: 35px;
+    }
+  }
+  .ant-btn {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20px;
   }
 }
 </style>

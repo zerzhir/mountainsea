@@ -6,7 +6,7 @@
       </div>
       <div class="answers">
         <a-row :gutter="30">
-          <a-col :span="12">
+          <a-col :span="24" :sm="12">
             <div class="answers-item">
               <div class="h4">如何参与？</div>
               <p>Mountainsea 于 2022 年 1 月 15日推出，首发一共发行有 6024 个 NFT 头像</p>
@@ -36,7 +36,7 @@
               </p>
             </div>
           </a-col>
-          <a-col :span="12">
+          <a-col :span="24" :sm="12">
             <div class="answers-item">
               <div class="h4">二期开往元宇宙？！</div>
               <p>
@@ -93,6 +93,21 @@ export default {}
     p {
       font-size: 14px;
       color: #262626;
+    }
+  }
+}
+</style>
+<style lang="less">
+.mobile {
+  .answers {
+    flex-wrap: wrap;
+    background: none;
+    &-item {
+      width: 100%;
+      p {
+        flex: 1;
+        padding-left: 10px;
+      }
     }
   }
 }

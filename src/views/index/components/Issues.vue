@@ -116,24 +116,36 @@ export default {}
 
       color: #262626;
     }
-    .star{
+    .star {
       height: 80px;
       padding: 13px 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      img{
+      img {
         width: 27px;
         margin: 2px;
       }
     }
   }
-  &-remarks{
+  &-remarks {
     text-align: center;
     font-size: 19px;
     color: #262626;
     margin-bottom: 60px;
   }
+}
+</style>
+<style lang="less">
+.mobile{
+  .issues {
+  flex-wrap: wrap;
+  &-item {
+    width: 46%;
+    padding: 15px 18px 20px;
+    margin-bottom: 15px;
+  }
+}
 }
 </style>

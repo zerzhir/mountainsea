@@ -4,41 +4,41 @@
       <div class="title">线路图规划</div>
       <div class="roadmap">
         <div class="roadmap-item">
-          <div class="round">1</div>
+          <div class="round">Q1</div>
           <p>
-            奇幻无穷的山海经元宇宙世界，首期以盲盒的形式发售构建山海经元宇宙的身份标识，这些标识既是高端的数字藏品，又是构建下一阶段山海经元宇宙世界的重要构件。
+            我们推出限量盲盒抢购，到60%阶段，推出收集活动，完成指定主题的NFT收集挑战，将提供特殊元素NFT作品作为奖励
           </p>
         </div>
         <div class="roadmap-item">
-          <div class="round">2</div>
+          <div class="round">Q1</div>
           <p>
-            卷卷公主的店铺要开张了，萌萌的小宠物即将登场，山海经神兽们可以开始领养小宠物啦，大家可以一起喂养小宠物。
+            与市场达成协议，发布后，所有Mountainsea
+            NFT都将有机会在NEAR市场上市，我们将致力于建立一个强大的社区，在Twitter和Discord上进行精彩的展示
           </p>
         </div>
         <div class="roadmap-item">
-          <div class="round">3</div>
-          <p>不同的萌宠合成会有什么样的彩蛋呢？是新的神兽形象还是新的技能，敬请期待！</p>
-        </div>
-        <div class="roadmap-item">
-          <div class="round">4</div>
+          <div class="round">Q1</div>
           <p>
-            山海经世界里有400多个不同形象的神怪奇兽让你目接不暇，它们哪些是代表福气、运气、快乐、生命、邪恶、恐怖、惊恐、黑暗呢？敬请期待！
+            发售100%后，推出卷卷山海经元宇宙，通过参与社区活动获得积分，凭借积分领养专属灵宠，并且通过仙草孵化灵宠，武装升级，就能与跨界的灵宠合成专属NFT
           </p>
         </div>
         <div class="roadmap-item">
-          <div class="round">5</div>
+          <div class="round">Q2</div>
           <p>
-            山海经世界元宇宙大门即将开启，神兽们一起回到神话神界，开天辟地、后羿射日、炎黄战蚩尤、不周山倒等神话故事将一一呈现。
+            灵宠进化：山海经元宇宙里的灵宠有火系、光系、冰系、植物系、等等多个种族，小宠物刚领养的时候灵力值很低，需要耐心的培育、升级，在仙草或者仙果的加持下，灵宠满级后能大变身，更有炫酷刺激的跨种族合体，合体后的新种族神兽值得期待
           </p>
         </div>
         <div class="roadmap-item">
-          <div class="round">6</div>
-          <p>山海经元宇宙世界为神兽们打开3D虚拟空间，一起畅游音乐吧、宝藏会、书画展、山海商城、山珍海味店等！</p>
+          <div class="round">Q3</div>
+          <p>
+            官方保留了部分未揭秘的特殊NFT，将在这一阶段慢慢解开面纱。这批NFT最终是以PK的形式，奖励给获胜方。只要你踊跃参与社区的活动，就有机会获取
+          </p>
         </div>
         <div class="roadmap-item">
-          <div class="round">7</div>
+          <div class="round">Q4</div>
           <p>
-            象限无界，无限精彩。我们将带你走进更多的卷卷元宇宙世界中，卷卷火星重庆森林元宇宙世界、卷卷红楼梦元宇宙世界。
+            1）我们将推出DAO，这将使社区的每个成员都能参与决策，共建社区 <br> 2）我们将把收取金额的15%分配给MSDAOment基金 <br>
+            3）我们继续扩大我们的团队，开发新的场景和有趣的产品
           </p>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default {}
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 40px 0;
-  background: url(../../../assets/roadmap.png) no-repeat center center;
+  background: url(../../../assets/roadmap.png) no-repeat center 20px;
   &-item {
     width: 583px;
     height: 159px;
@@ -70,7 +70,7 @@ export default {}
       width: 131px;
       height: 131px;
       font-weight: 800;
-      font-size: 79px;
+      font-size: 45px;
       line-height: 131px;
       border-radius: 50%;
       color: #fff;
@@ -84,6 +84,21 @@ export default {}
       font-size: 14px;
       line-height: 25px;
       color: #3f4246;
+    }
+  }
+}
+</style>
+<style lang="less">
+.mobile {
+  .roadmap {
+    flex-wrap: wrap;
+    background: none;
+    &-item {
+      width: 100%;
+      p {
+        flex: 1;
+        padding-left: 10px;
+      }
     }
   }
 }

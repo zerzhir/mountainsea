@@ -7,9 +7,27 @@
         </div>
         <p>
           欢迎来到卷卷与中国古籍山海经灵兽的奇缘世界，开启你的收藏之旅吧！ <br />
-          <span>发行日期2022年1月15日</span>
+          <span>发行日期2022年1月22日</span>
         </p>
-        <div class="btn" @click="handleBuy">{{ wallet.signedIn ? '购买一个' : '连接钱包' }}</div>
+        <!-- <div class="btn" @click="handleBuy">{{ wallet.signedIn ? '购买一个' : '连接钱包' }}</div> -->
+        <a-popover>
+          <template slot="content">
+            <a
+              class="btn btn-account"
+              href="https://wj.qq.com/s2/9609897/8982"
+              target="_blank"
+            ><a-button type="primary">提交账户信息</a-button></a
+            >
+            <a
+              class="btn btn-discord"
+              href="https://discord.gg/cMeSWKQ66p"
+              target="_blank"
+            ><a-button type="primary">进入Discord</a-button></a
+            >
+          </template>
+          <a class="btn">申请白名单</a>
+        </a-popover>
+
         <div class="total">
           <div class="total-item">
             <b>24</b> <br />
@@ -55,6 +73,11 @@ export default {
 }
 </script>
 <style lang="less">
+.btn-discord,
+.btn-account {
+  display: inline-block;
+  margin: 0 10px;
+}
 .banner {
   background: url(../../../assets/banner.png) no-repeat top center;
   width: 100%;
@@ -79,6 +102,7 @@ export default {
     }
   }
   .btn {
+    display: inline-block;
     width: 214px;
     height: 54px;
     color: #000;
@@ -110,6 +134,40 @@ export default {
         font-size: 31px;
         line-height: 36px;
         color: #d49101;
+      }
+    }
+  }
+}
+</style>
+<style lang="less">
+.mobile{
+  .banner{
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: 0 -10px;
+    .h1{
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    p{
+      width: 80%;
+      font-size: 21px;
+      span{
+        padding: 15px 0;
+      }
+    }
+    .btn{
+      height: 45px;
+      line-height: 45px;
+    }
+    .total{
+      position: relative;
+      width: 80%;
+      margin-top: 15px;
+      justify-content: space-between;
+      b{
+        font-size: 26px;
       }
     }
   }

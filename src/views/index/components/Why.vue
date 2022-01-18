@@ -111,3 +111,39 @@ export default {
   }
 }
 </style>
+<style lang="less">
+.mobile{
+  .why{
+    padding: 15px;
+    border-radius: 35px;
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 70px;
+    .left,.right{
+      width: 100%;
+    }
+    .left{
+      p,li{
+        width: 100%;
+      }
+    }
+    .right{
+      .h3{
+        font-size: 26px;
+        .btn{
+          width: 160px;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .tip{
+      bottom: 30px;
+    }
+  }
+
+}
+</style>

@@ -2,7 +2,7 @@
   <div class="share-links">
     <a href="https://twitter.com/Mountainsea_nft" @click="handleCopy"><img src="../../../assets/share1.png" alt=""/></a>
     <a href="https://t.me/shanhaijingmeta" @click="handleCopy"><img src="../../../assets/share7.png" alt=""/></a>
-    <a href="https://discord.gg/TVY2MapTxV" @click="handleCopy"><img src="../../../assets/share8.png" alt=""/></a>
+    <a href="https://discord.gg/cMeSWKQ66p" @click="handleCopy"><img src="../../../assets/share8.png" alt=""/></a>
     <a href="" @click="handleCopy"><img src="../../../assets/share2.png" alt=""/></a>
     <a href="" @click="handleCopy"><img src="../../../assets/share3.png" alt=""/></a>
     <a href="" @click="handleCopy"><img src="../../../assets/share4.png" alt=""/></a>

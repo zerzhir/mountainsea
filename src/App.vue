@@ -42,4 +42,16 @@ export default {
 [v-cloak] {
   display: none;
 }
+.mobile {
+  .row {
+    .container {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+  .title{
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
 </style>

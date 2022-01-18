@@ -57,3 +57,36 @@ export default {}
   }
 }
 </style>
+<style lang="less">
+.mobile {
+  .series {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    .left,
+    .right {
+      width: 100%;
+      p{
+        width: 100%;
+      }
+      img{
+        width: 40%;
+        margin-left: 0;
+        height: 117px;
+        &:first-child{
+          width: 60%;
+          padding-right: 10px;
+          height: 245px;
+        }
+      }
+    }
+    .h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+  }
+}
+</style>

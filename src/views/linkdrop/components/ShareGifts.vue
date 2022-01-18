@@ -157,7 +157,7 @@ export default {
         border-radius: 10px;
         background: #efb437;
         margin-right: 10px;
-        border: 1px solid #fff;
+        border: 1px solid #ffffff;
       }
     }
     .btn {
@@ -174,6 +174,43 @@ export default {
       text-align: center;
       cursor: pointer;
     }
+  }
+}
+</style>
+<style lang="less">
+.mobile {
+  .share-gifts {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    .h1 {
+      font-size: 30px;
+      width: 100%;
+      line-height: 45px;
+    }
+    .links {
+      width: 100%;
+      .tip{
+        width: 50%;
+      }
+    }
+    .links-item {
+      .ant-input-affix-wrapper {
+        width: 47%;
+        height: 48px;
+        .ant-input{
+          width: 100%;
+        }
+      }
+      & > .ant-input {
+        width: 40%;
+      }
+    }
+  }
+  .total{
+    width: 100%;
+    position: relative;
+    bottom: 0;
   }
 }
 </style>

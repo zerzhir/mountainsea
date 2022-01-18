@@ -7,7 +7,7 @@
         </div>
         <img src="../../assets/logo-footer.png" alt="" />
         <p>Mountainsea NFTs are built on top of NEAR Protocol, where minting NFTs cost less than a cent per item.</p>
-        <a href="https://discord.gg/TVY2MapTxV" target="blank">
+        <a href="https://discord.gg/cMeSWKQ66p" target="blank">
           <z-icon
             type="icon-discord"
             :style="{
@@ -57,7 +57,7 @@
           <span>公众号：</span> @山海经元宇宙吧 <br /> -->
         </div>
       </div>
-      <a-divider><div class="copy">© 2021 Mountainsea Guild. All Rights Reserved.</div></a-divider>
+      <a-divider><div class="copy">© 2022 TenKBay DAO. All Rights Reserved.</div></a-divider>
     </div>
   </div>
 </template>
@@ -87,6 +87,7 @@ export default {
     img {
       margin-top: 8px;
       margin-bottom: 34px;
+      width: 142px;
     }
     p {
       width: 341px;
@@ -136,6 +137,30 @@ export default {
   }
   .ant-divider {
     margin-top: 50px !important;
+  }
+}
+</style>
+<style lang="less">
+.mobile{
+  .footer{
+    .built-on{
+      width: 100%;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      // text-align: center;
+      p{
+        width: 100%;
+      }
+    }
+    .fast-links{
+      width: 100%;
+      justify-content: space-around;
+      &-item{
+        width: 25%;
+        // text-align: center;
+      }
+    }
   }
 }
 </style>

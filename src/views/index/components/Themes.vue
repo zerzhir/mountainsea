@@ -5,7 +5,7 @@
         <div class="themes-item">
           <img src="../../../assets/t1.png" alt="" />
           <div class="h6">
-            JuanJuan
+            卷卷
             <div class="star">
               <img src="../../../assets/star.png" alt="" />
               <img src="../../../assets/star.png" alt="" />
@@ -29,10 +29,10 @@
             <img src="../../../assets/ti3.png" alt="" />
             <a-progress :percent="25" :showInfo="false" strokeColor="#464646" size="small"></a-progress>
           </div>
-          <div class="time">
+          <!-- <div class="time">
             Ends In <br />
-            <b>30:45:57</b>
-          </div>
+            <b>{{ countDown }}</b>
+          </div> -->
         </div>
         <div class="themes-item">
           <img src="../../../assets/t2.png" alt="" />
@@ -59,10 +59,10 @@
             <img src="../../../assets/ti3.png" alt="" />
             <a-progress :percent="25" :showInfo="false" strokeColor="#464646" size="small"></a-progress>
           </div>
-          <div class="time">
+          <!-- <div class="time">
             Ends In <br />
-            <b>30:45:57</b>
-          </div>
+            <b>{{ countDown }}</b>
+          </div> -->
         </div>
         <div class="themes-item">
           <img src="../../../assets/t3.png" alt="" />
@@ -89,10 +89,10 @@
             <img src="../../../assets/ti3.png" alt="" />
             <a-progress :percent="25" :showInfo="false" strokeColor="#464646" size="small"></a-progress>
           </div>
-          <div class="time">
+          <!-- <div class="time">
             Ends In <br />
-            <b>30:45:57</b>
-          </div>
+            <b>{{ countDown }}</b>
+          </div> -->
         </div>
         <div class="themes-item">
           <img src="../../../assets/t4.png" alt="" />
@@ -119,10 +119,10 @@
             <img src="../../../assets/ti3.png" alt="" />
             <a-progress :percent="25" :showInfo="false" strokeColor="#464646" size="small"></a-progress>
           </div>
-          <div class="time">
+          <!-- <div class="time">
             Ends In <br />
-            <b>30:45:57</b>
-          </div>
+            <b>{{ countDown }}</b>
+          </div> -->
         </div>
         <div class="themes-item">
           <img src="../../../assets/t5.png" alt="" />
@@ -149,10 +149,10 @@
             <img src="../../../assets/ti3.png" alt="" />
             <a-progress :percent="25" :showInfo="false" strokeColor="#464646" size="small"></a-progress>
           </div>
-          <div class="time">
+          <!-- <div class="time">
             Ends In <br />
-            <b>30:45:57</b>
-          </div>
+            <b>{{ countDown }}</b>
+          </div> -->
         </div>
       </div>
       <div class="btn themes-btn" @click="handleBuy">
@@ -166,6 +166,9 @@ export default {
   computed: {
     wallet () {
       return this.$store.state.near.wallet || {}
+    },
+    countDown () {
+      return this.funcDay() + '天' + this.funcTime()
     }
   },
   methods: {
@@ -176,6 +179,26 @@ export default {
       }
       window.scrollTo(0, 0)
       this.$message.warning('请先连接钱包')
+    },
+    funcDay () {
+      const deadline = new Date('2022/01/22 11:00:00').valueOf()
+      const day = Math.floor((deadline - new Date().valueOf()) / (24 * 3600 * 1000))
+      return day.toString()
+    },
+    funcTime () {
+      const deadline = new Date('2022/01/22 11:00:00').valueOf()
+      const time = (deadline - new Date().valueOf()) % (24 * 3600 * 1000)
+      if (time > 0) {
+        const h = Math.floor(time / (3600 * 1000))
+        const m = Math.floor((time - h * 3600 * 1000) / 60 / 1000)
+        const s = Math.floor((time - h * 3600 * 1000 - m * 60 * 1000) / 1000)
+        const hs = h.toString().length === 1 ? '0' + h : h.toString()
+        const ms = m.toString().length === 1 ? '0' + m : m.toString()
+        const ss = s.toString().length === 1 ? '0' + s : s.toString()
+        return hs + ':' + ms + ':' + ss
+      } else {
+        return false
+      }
     }
   }
 }
@@ -237,5 +260,19 @@ export default {
 
     color: #ffffff;
   }
+}
+</style>
+<style lang="less">
+.mobile{
+  .themes {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 6px;
+  &-item {
+    width:46%;
+    padding: 15px 18px 20px;
+    margin-bottom: 15px;
+  }
+}
 }
 </style>

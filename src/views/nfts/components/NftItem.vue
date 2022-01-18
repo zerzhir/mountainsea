@@ -337,3 +337,21 @@ export default {
   }
 }
 </style>
+<style lang="less">
+.mobile{
+  .nfts{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-item{
+      width: 46%;
+      height: auto;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 15px;
+      .code{
+        bottom: 15px;
+      }
+    }
+  }
+}
+</style>

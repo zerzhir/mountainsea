@@ -137,3 +137,18 @@ export default {
   }
 }
 </style>
+<style lang="less">
+.mobile{
+  .buymore {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-item{
+      width: 100%;
+      height: auto;
+      margin-bottom: 50px;
+      padding-left: 40px;
+      padding-right: 10px;
+    }
+  }
+}
+</style>
