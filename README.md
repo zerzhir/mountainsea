@@ -1,25 +1,17 @@
-├─api
-├─assets  //静态图片目录
-├─components //公共组件目录
-├─config //路由配置目录
-├─core //启动加载文件
-├─layouts //页面布局文件目录
-├─locales 
-├─router //路由实例化
-├─server //接口地址配置/公共请求封装
-├─store //状态管理
-├─utils //辅助工具函数
-└─views //页面目录
-    ├─activity //活动
-    ├─blindbox //盲盒
-    ├─center //个人中心
-    ├─collection //藏品
-    ├─community //社区
-    ├─exception //异常
-    ├─index //首页
-    ├─mall //市场
-    ├─policy //隐私政策
-    └─public 
+├─config near 配置文件再这里 <br> 
+├─src <br>
+&emsp;├─api <br>
+&emsp;├─assets  //静态图片目录<br>
+&emsp;├─components //公共组件目录<br>
+&emsp;├─config //路由配置目录<br>
+&emsp;├─core //启动加载文件<br>
+&emsp;├─layouts //页面布局文件目录<br>
+&emsp;├─locales <br>
+&emsp;├─router //路由实例化<br>
+&emsp;├─server //接口地址配置/公共请求封装<br>
+&emsp;├─store //状态管理<br>
+&emsp;├─utils //辅助工具函数<br>
+&emsp;└─views //页面目录<br>
 
 - 安装依赖
 ```
