@@ -350,6 +350,8 @@ export default {
       margin-bottom: 15px;
       .code{
         bottom: 15px;
+        max-width:  96%;
+        margin-left: -48%;
       }
     }
   }

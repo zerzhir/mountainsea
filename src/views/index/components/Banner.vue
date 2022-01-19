@@ -3,51 +3,51 @@
     <div class="container">
       <div class="banner">
         <div class="h1">
-          卷卷元宇宙•山海经系列
+          The JuanJuan Metaverse <br>Mountain&sea
         </div>
         <p>
-          欢迎来到卷卷与中国古籍山海经灵兽的奇缘世界，开启你的收藏之旅吧！ <br />
-          <span>发行日期2022年1月22日</span>
+          Join an Exclusive Community of Mountainsea Metaverse early adopters and BUIDLers. <br />
+          <span>Release Date: January 22, 2022</span>
         </p>
-        <!-- <div class="btn" @click="handleBuy">{{ wallet.signedIn ? '购买一个' : '连接钱包' }}</div> -->
+        <!-- <div class="btn" @click="handleBuy">{{ wallet.signedIn ? 'Buy Your First' : 'Connect Wallet' }}</div> -->
         <a-popover>
           <template slot="content">
             <a
               class="btn btn-account"
               href="https://wj.qq.com/s2/9609897/8982"
               target="_blank"
-            ><a-button type="primary">提交账户信息</a-button></a
+            ><a-button type="primary">Submit user info</a-button></a
             >
             <a
               class="btn btn-discord"
               href="https://discord.gg/cMeSWKQ66p"
               target="_blank"
-            ><a-button type="primary">进入Discord</a-button></a
+            ><a-button type="primary">Join Discord</a-button></a
             >
           </template>
-          <a class="btn">申请白名单</a>
+          <a class="btn">Apply Whitelist</a>
         </a-popover>
 
         <div class="total">
           <div class="total-item">
             <b>24</b> <br />
-            卷卷
+            JUAN<br /> JUAN
           </div>
           <div class="total-item">
             <b>1.5K</b><br />
-            白虎
+            WHITE<br /> TIGER
           </div>
           <div class="total-item">
             <b>1.5K</b><br />
-            青龙
+            AZURE<br /> DROGEN
           </div>
           <div class="total-item">
             <b>1.5K</b><br />
-            朱雀
+            VERMILION<br /> BIRD
           </div>
           <div class="total-item">
             <b>1.5K</b><br />
-            玄武
+            BLACK <br />TORTOISE
           </div>
         </div>
       </div>
@@ -83,18 +83,18 @@ export default {
   width: 100%;
   height: 571px;
   color: #fff;
-  padding: 84px 45px;
+  padding: 64px 45px;
   position: relative;
   .h1 {
     font-weight: bold;
-    font-size: 58px;
-    line-height: 67px;
+    font-size: 46px;
+    line-height: 53px;
     margin-bottom: 25px;
   }
   p {
-    width: 484px;
-    font-size: 24px;
-    line-height: 36px;
+    width: 584px;
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 0;
     span {
       display: inline-block;
@@ -127,13 +127,13 @@ export default {
       line-height: 16px;
       color: #3f4246;
       text-align: center;
-      line-height: 30px;
 
       b {
         font-weight: 600;
         font-size: 31px;
-        line-height: 36px;
+        line-height: 46px;
         color: #d49101;
+        padding-bottom: 6px;
       }
     }
   }
@@ -142,32 +142,43 @@ export default {
 <style lang="less">
 .mobile{
   .banner{
+    background: url(../../../assets/banner_mb.png) no-repeat top center;
+    background-size: 100% auto;
     height: auto;
     width: auto;
     padding: 15px;
-    margin: 0 -10px;
     .h1{
-      font-size: 30px;
-      margin-bottom: 15px;
+      font-size: 17px;
+      margin-bottom: 10px;
+      line-height: 25px;
     }
     p{
       width: 80%;
-      font-size: 21px;
+      font-size: 10px;
+      line-height: 18px;
       span{
-        padding: 15px 0;
+        padding: 10px 0;
       }
     }
     .btn{
-      height: 45px;
-      line-height: 45px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 10px;
+      width: auto;
+      padding: 0 15px;
     }
     .total{
       position: relative;
-      width: 80%;
-      margin-top: 15px;
+      width: 76%;
+      margin-top: 10px;
+      font-size: 9px;
       justify-content: space-between;
+      &-item{
+        font-size: 9px;
+      }
       b{
-        font-size: 26px;
+        font-size: 16px;
+        line-height: 30px;
       }
     }
   }

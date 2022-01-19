@@ -3,19 +3,20 @@
     <div class="container">
       <div class="why">
         <div class="left">
-          <div class="h2">为什么要购买NFT？</div>
+          <div class="h2">Why generate one?</div>
           <p>
-            由艺术家倾力创作，顶级手绘水准，是投资者和艺术收藏者最佳选择。1件数字作品=1张踏入元宇宙的门票。拥有1件，你就拥有1个山海经元宇宙的身份标识，成为了下一阶段山海经元宇宙世界的重要角色。
+            By the artist dedicated to the creation, top hand-painted level, is the best choice for investors and art collectors. 1 digital work =1 ticket to the meta-universe. If you have one, you will have one identity symbol and become an important player in the next phase of the Mountain&Sea Metaverse.
           </p>
-          <div class="h4">NFT用途：</div>
+          <div class="h4">NFT USES:</div>
           <ul>
-            <li>1.收藏一个属于你的山海经作品，等待升值</li>
-            <li>2.有机会参与挑战活动，获得奖品3.有资格领养灵宠，孵化升级合成NFT</li>
+            <li>1.Collect one of your classics of Mountains and Seas and wait for it to appreciate</li>
+            <li>2.Have the opportunity to participate in the challenge activities and win prizes. </li>
+            <li>3.Eligible to adopt a pet, hatch and upgrade synthetic NFT.</li>
           </ul>
-          <div class="tip">卷卷山海经元宇宙强势来袭！</div>
+          <div class="tip"></div>
         </div>
         <div class="right">
-          <div class="h3">确定二级市场 <a class="btn" @click="handleBuy">进入购买</a></div>
+          <div class="h3">Identify secondary market <a class="btn" @click="handleBuy">Buy on Mintbase</a></div>
           <img src="../../../assets/why.png" alt="" />
         </div>
       </div>
@@ -45,7 +46,6 @@ export default {
 .why {
   position: relative;
   width: 100%;
-  height: 662px;
   margin-bottom: 60px;
   background: #ffffff url(../../../assets/cloud.png) no-repeat center center;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
@@ -88,7 +88,7 @@ export default {
   }
   .h3 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 21px;
     color: #d49101;
     .btn {
       display: inline-block;
@@ -125,15 +125,20 @@ export default {
     .left{
       p,li{
         width: 100%;
+        font-size: 10px;
+      }
+      .h2{
+        font-size: 18px;
       }
     }
     .right{
       .h3{
-        font-size: 26px;
+        font-size: 12px;
         .btn{
           width: 160px;
           height: 50px;
           line-height: 50px;
+          font-size: 12px;
         }
       }
       img{

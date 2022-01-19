@@ -3,14 +3,13 @@
     <div class="container">
       <div class="series">
         <div class="left">
-          <div class="h2">卷卷元宇宙•山海经系列</div>
-          <p>卷卷元宇宙的核心是玫瑰城堡。玫瑰城堡的秘密通道可以通往异世界。</p>
+          <div class="h2">The JuanJuan Metaverse <br>Mountain&sea</div>
+          <p>At the heart of the Mountain&Sea Metaverse  is the Rose Castle.The rose Castle's secret passageway leads to another world.</p>
           <p>
-            卷卷公主在每一个世界里都幻化成不同的身份，会遇到意想不到的奇怪朋友。在异世界1
-            号-山海经世界，卷卷穿越无尽空洞黑暗，豁然见一片鲜草奇山，神兽巨凤穿梭天地间，美不胜收。
+            In each world, JuanJuan Princess transforms into a different identity and meets strange and unexpected friends. In the different world no. 1 - The world of Mountain&Sea, roll through the endless empty darkness, suddenly see a strange mountain of fresh grass, god beast feng shuttle between heaven and earth, beautiful.
           </p>
           <p>
-            卷卷玄幻世界之山海经是在区块链上随机和编程生成的6024个NFT的集合。其中包含卷卷24个，四大神兽青龙、白虎、朱雀、玄武各1500个。他们拥有不同稀有度的服饰，装扮、道具和特征，每一个都是独一无二的。
+            Mountain&Sea metaverse is a collection of 6024 NFT randomly and programmatically generated on the blockchain. Including JuanJuan 24, four god beast azure drogen, white tiger, vermilion bird, black tortoise 1500 each.
           </p>
         </div>
         <div class="right">
@@ -33,18 +32,18 @@ export default {}
   .left {
     .h2 {
       font-size: 36px;
-      line-height: 50px;
+      line-height: 41px;
       color: #d49101;
-      margin: 40px 0;
+      margin-bottom: 25px;
     }
     p {
-      width: 360px;
+      width: 421px;
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
       text-align: justify;
       color: #4e4e4e;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
   }
   .right {
@@ -70,6 +69,7 @@ export default {}
       width: 100%;
       p{
         width: 100%;
+        font-size: 10px;
       }
       img{
         width: 40%;
@@ -83,9 +83,10 @@ export default {}
       }
     }
     .h2 {
-      font-size: 30px;
-      margin-bottom: 15px;
+      font-size: 18px;
+      margin-bottom: 10px;
       margin-top: 0;
+      line-height: 26px;
     }
   }
 }

@@ -45,12 +45,12 @@
           /> -->
             <!-- <a-tooltip
             placement="topLeft"
-            title="点击退出"
+            title="Log Out"
             v-if="account.accountId"
           ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
           > -->
             <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
-            <a href="https://wallet.near.org" target="_blank"><a-button type="primary">注册NEAR钱包</a-button></a>
+            <a href="https://wallet.near.org" target="_blank"><a-button type="primary">Register NEAR Wallet</a-button></a>
           </template>
           <a-icon
             type="bars"
@@ -78,12 +78,12 @@
           </a-anchor>
           <!-- <a-tooltip
             placement="topLeft"
-            title="点击退出"
+            title="Log Out"
             v-if="account.accountId"
           ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
           > -->
           <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
-          <a href="https://wallet.near.org" target="_blank"><a-button type="primary">注册NEAR钱包</a-button></a>
+          <a href="https://wallet.near.org" target="_blank"><a-button type="primary">Register NEAR Wallet</a-button></a>
         </div>
       </a-drawer>
     </a-row>
@@ -112,15 +112,15 @@ export default {
       showDrawer: false,
       menuList: [
         {
-          name: '详情',
+          name: 'Details',
           path: '/index#detail'
         },
         {
-          name: '稀有度',
+          name: 'Rarity',
           path: '/index#level'
         },
         {
-          name: '权益',
+          name: 'Generate',
           path: '/index#right'
         },
         {
@@ -128,7 +128,7 @@ export default {
           path: '/index#faq'
         },
         {
-          name: '我的NFT',
+          name: 'My NFTs',
           path: '/nfts',
           is_login: true
         },
@@ -272,7 +272,7 @@ export default {
   }
 }
 .menu-drawer {
-  padding: 20px;
+  padding: 20px 0;
   .ant-anchor-wrapper {
     background: none;
     a {
@@ -303,6 +303,7 @@ export default {
     font-size: 16px;
     font-weight: 700;
     margin-left: 20px;
+    margin: 0;
   }
 }
 </style>

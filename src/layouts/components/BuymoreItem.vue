@@ -1,6 +1,7 @@
 <template>
   <div class="buymore-item">
     <div class="h2" @click="handleBuy">{{ title }}</div>
+    <span v-if="isLinkdrop">Share a mystery NFT  for your friend</span>
     <div class="one">
       <div :class="{ round: true, active: count === 1 }" @click="handleCount(1)">1</div>
       <div class="line"></div>

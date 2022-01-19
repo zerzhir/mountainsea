@@ -1,44 +1,49 @@
 <template>
   <div class="row">
     <div class="container">
-      <div class="title">线路图规划</div>
+      <div class="title">ROAD MAP</div>
       <div class="roadmap">
         <div class="roadmap-item">
           <div class="round">Q1</div>
           <p>
-            我们推出限量盲盒抢购，到60%阶段，推出收集活动，完成指定主题的NFT收集挑战，将提供特殊元素NFT作品作为奖励
-          </p>
-        </div>
-        <div class="roadmap-item">
-          <div class="round">Q1</div>
-          <p>
-            与市场达成协议，发布后，所有Mountainsea
-            NFT都将有机会在NEAR市场上市，我们将致力于建立一个强大的社区，在Twitter和Discord上进行精彩的展示
-          </p>
-        </div>
-        <div class="roadmap-item">
-          <div class="round">Q1</div>
-          <p>
-            发售100%后，推出卷卷山海经元宇宙，通过参与社区活动获得积分，凭借积分领养专属灵宠，并且通过仙草孵化灵宠，武装升级，就能与跨界的灵宠合成专属NFT
+            1) We launched limited blind box purchases, and at the 60% stage, we launched collection activities to
+            complete NFT collection challenges with designated themes, and special element NFT works will be provided as
+            rewards
+            <br />
+            2) After reaching an agreement with the market, after release, all Mountainsea NFTs will have the
+            opportunity to be listed on the NEAR market, and we will work on building a strong community with great
+            presentations on Twitter and Discord
+            <br />
+            3) After 100% of the sale, launch the Scroll of Mountains and Seas Metaverse, earn points by participating
+            in community activities, adopt exclusive pets with the points, hatch pets through fairy grass, and upgrade
+            their weapons, so that they can synthesize exclusive pets with cross-border pets. NFT
           </p>
         </div>
         <div class="roadmap-item">
           <div class="round">Q2</div>
           <p>
-            灵宠进化：山海经元宇宙里的灵宠有火系、光系、冰系、植物系、等等多个种族，小宠物刚领养的时候灵力值很低，需要耐心的培育、升级，在仙草或者仙果的加持下，灵宠满级后能大变身，更有炫酷刺激的跨种族合体，合体后的新种族神兽值得期待
+            Spiritual pet evolution: Spiritual pets in the Mountainsea Metaverse include fire, light, ice, plant, and
+            many other races. When a small pet was first adopted, its spiritual value was very low, and it required
+            patience to nurture and upgrade. Under the blessing of immortal grass or immortal fruit, spiritual pets can
+            transform greatly after reaching full level, and there are more cool and exciting cross-racial integrations.
+            The new racial beasts after the integration are worth looking forward to.
           </p>
         </div>
         <div class="roadmap-item">
           <div class="round">Q3</div>
           <p>
-            官方保留了部分未揭秘的特殊NFT，将在这一阶段慢慢解开面纱。这批NFT最终是以PK的形式，奖励给获胜方。只要你踊跃参与社区的活动，就有机会获取
+            The official retains some undisclosed special NFTs, and will slowly unveil at this stage. These batches of
+            NFTs are finally rewarded to the winning party in the form of PK. As long as you actively participate in the
+            activities of the community, you have the opportunity to obtain
           </p>
         </div>
         <div class="roadmap-item">
           <div class="round">Q4</div>
           <p>
-            1）我们将推出DAO，这将使社区的每个成员都能参与决策，共建社区 <br> 2）我们将把收取金额的15%分配给MSDAOment基金 <br>
-            3）我们继续扩大我们的团队，开发新的场景和有趣的产品
+            1) We will launch DAO, which will enable every member of the community to participate in decision-making and
+            build the community together<br />
+            2) We will allocate 15% of the collected amount to the MSDAOment fund<br />
+            3) We continue to expand our team to develop new scenarios and interesting products
           </p>
         </div>
       </div>
@@ -53,10 +58,10 @@ export default {}
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 18px 0;
   background: url(../../../assets/roadmap.png) no-repeat center 20px;
   &-item {
-    width: 583px;
+    width: 100%;
     height: 159px;
 
     background: #ffffff;
@@ -77,13 +82,16 @@ export default {}
       text-align: center;
       background: #d49101;
       margin-left: 16px;
+
     }
     p {
-      width: 389px;
+      flex: 1;
       margin-right: 30px;
       font-size: 14px;
-      line-height: 25px;
+      line-height: 21px;
       color: #3f4246;
+      padding-left: 12px;
+      padding-top: 10px;
     }
   }
 }
@@ -95,9 +103,24 @@ export default {}
     background: none;
     &-item {
       width: 100%;
+      height: auto;
+      border-radius: 21px;
+      align-items: stretch;
+      .round{
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        width: 58px;
+        height: auto;
+        margin: 10px;
+
+        font-size: 30px;
+        justify-content: center;
+      }
       p {
         flex: 1;
-        padding-left: 10px;
+        padding-left:0;
+
       }
     }
   }

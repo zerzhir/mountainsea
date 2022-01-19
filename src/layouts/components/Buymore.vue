@@ -2,10 +2,10 @@
   <div class="row">
     <div class="container">
       <div class="buymore">
-        <buymore-item title="立即购买" />
-        <buymore-item title="生成礼品链接" :is-linkdrop="true" />
+        <buymore-item title="Buy more" />
+        <buymore-item title="Generate gift links" :is-linkdrop="true" />
         <div class="buymore-item">
-          <div class="h2" @click="toggleModal">发送NFT</div>
+          <div class="h2" @click="toggleModal">Send NFT</div>
           <img src="../../assets/j1.png" alt="" />
         </div>
       </div>

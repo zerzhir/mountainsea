@@ -5,7 +5,7 @@
         <div class="themes-item">
           <img src="../../../assets/t1.png" alt="" />
           <div class="h6">
-            卷卷
+            JUANJUAN
             <div class="star">
               <img src="../../../assets/star.png" alt="" />
               <img src="../../../assets/star.png" alt="" />
@@ -37,7 +37,8 @@
         <div class="themes-item">
           <img src="../../../assets/t2.png" alt="" />
           <div class="h6">
-            白虎
+            WHITE TIGER
+
             <div class="star">
               <img src="../../../assets/star.png" alt="" />
               <img src="../../../assets/star.png" alt="" />
@@ -67,7 +68,7 @@
         <div class="themes-item">
           <img src="../../../assets/t3.png" alt="" />
           <div class="h6">
-            青龙
+            AZURE DROGEN
             <div class="star">
               <img src="../../../assets/star.png" alt="" />
               <img src="../../../assets/star.png" alt="" />
@@ -97,7 +98,7 @@
         <div class="themes-item">
           <img src="../../../assets/t4.png" alt="" />
           <div class="h6">
-            朱雀
+            VERMILION BIRD
             <div class="star">
               <img src="../../../assets/star.png" alt="" />
               <img src="../../../assets/star.png" alt="" />
@@ -127,7 +128,7 @@
         <div class="themes-item">
           <img src="../../../assets/t5.png" alt="" />
           <div class="h6">
-            玄武
+            BLACK TORTOISE
             <div class="star">
               <img src="../../../assets/star.png" alt="" />
               <img src="../../../assets/star.png" alt="" />
@@ -156,7 +157,7 @@
         </div>
       </div>
       <div class="btn themes-btn" @click="handleBuy">
-        更多组合
+        More combinations
       </div>
     </div>
   </div>
@@ -218,11 +219,12 @@ export default {
       width: 100%;
     }
     .h6 {
+      padding: 10px 0 5px;
       font-size: 14px;
       color: #c4c4c4;
-      line-height: 34px;
+      line-height: 20px;
+      text-align: center;
       .star {
-        float: right;
         img {
           width: 10px;
         }
@@ -248,7 +250,7 @@ export default {
     }
   }
   &-btn {
-    width: 139px;
+    width: 211px;
     height: 45px;
     margin: 50px auto;
 
@@ -263,16 +265,21 @@ export default {
 }
 </style>
 <style lang="less">
-.mobile{
+.mobile {
   .themes {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 6px;
-  &-item {
-    width:46%;
-    padding: 15px 18px 20px;
-    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px;
+    &-item {
+      width: 31%;
+      margin: 0 1.1666%;
+      padding: 10px 14px 10px;
+      margin-bottom: 15px;
+      .h6{
+        font-size: 9px;
+        margin: 0 -10px;
+      }
+    }
   }
-}
 }
 </style>

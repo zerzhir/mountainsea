@@ -11,8 +11,8 @@
       <div class="row">
         <div class="container">
           <div class="linkdrop">
-            <div class="h3">你还没有Linkdrop链接</div>
-            <div class="btn">点击<span>“生成礼品链接”</span>购买</div>
+            <div class="h3">You don't have a Linkdrop link yet</div>
+            <div class="btn">Click<span>"Generate Gift Link"</span>to buy</div>
             <div class="clearfix"></div>
             <share-links />
           </div>
@@ -76,7 +76,7 @@ export default {
     padding: 29px 0;
   }
   .btn {
-    width: 283px;
+    width: 348px;
     height: 56px;
 
     border: 2px solid #d49101;

@@ -2,7 +2,7 @@
   <div class="row" id="level">
     <div class="container">
       <div class="title title-black">
-        总发行数量：6024
+        Types of roles： 6024
       </div>
       <div class="issues">
         <div class="issues-item">
@@ -17,7 +17,7 @@
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
           </div>
-          <span>典藏</span>
+          <span>COLLECTION</span>
         </div>
         <div class="issues-item">
           <div class="h5">147</div>
@@ -30,7 +30,7 @@
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
           </div>
-          <span>稀有</span>
+          <span>RARE</span>
         </div>
         <div class="issues-item">
           <div class="h5">235</div>
@@ -42,7 +42,7 @@
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
           </div>
-          <span>独家</span>
+          <span>EXCLUSIVE</span>
         </div>
         <div class="issues-item">
           <div class="h5">1376</div>
@@ -54,7 +54,7 @@
             <img src="../../../assets/star-lg.png" alt="" />
           </div>
 
-          <span>特别</span>
+          <span>SPECIAL</span>
         </div>
         <div class="issues-item">
           <div class="h5">2732</div>
@@ -64,7 +64,7 @@
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
           </div>
-          <span>花式</span>
+          <span>FANCY</span>
         </div>
         <div class="issues-item">
           <div class="h5">1518</div>
@@ -73,11 +73,11 @@
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
           </div>
-          <span>普通</span>
+          <span>COMMON</span>
         </div>
       </div>
       <div class="issues-remarks">
-        每一个NFT拥有的稀有度在不同场景下均有差异，具体价值敬请期待后续...
+        The rarity of each NFT varies in different scenarios, and the specific value will be expected later…
       </div>
     </div>
   </div>
@@ -141,10 +141,29 @@ export default {}
 .mobile{
   .issues {
   flex-wrap: wrap;
+  padding-bottom: 20px;
   &-item {
-    width: 46%;
-    padding: 15px 18px 20px;
+    width: 31%;
+    height: auto;
+    padding: 10px 14px 10px;
     margin-bottom: 15px;
+    .h5{
+      font-size: 24px;
+    }
+    span{
+      font-size: 11px;
+    }
+    .star{
+      height: 40px;
+      padding: 0;
+      img{
+        width: 15px;
+      }
+    }
+  }
+  &-remarks{
+    font-size: 12px;
+    margin-bottom: 20px;
   }
 }
 }

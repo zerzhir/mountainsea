@@ -50,7 +50,7 @@ export default {
     }
   }
   .title{
-    font-size: 25px;
+    font-size: 18px;
     line-height: 40px;
   }
 }

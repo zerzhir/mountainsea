@@ -37,15 +37,15 @@
       </div>
       <div class="fast-links">
         <div class="fast-links-item">
-          <div class="h5">学习</div>
-          <a href="/index#detail">详情</a>
-          <a href="/index#level">稀有度</a>
-          <a href="/index#right">权益</a>
+          <div class="h5">Learn</div>
+          <a href="/index#detail">Details</a>
+          <a href="/index#level">Rarity</a>
+          <a href="/index#right">Generate</a>
           <a href="/index#faq">FAQ</a>
         </div>
         <div class="fast-links-item">
-          <div class="h5">我的NFT</div>
-          <a href="/nfts">My NFT</a>
+          <div class="h5">My NFTs</div>
+          <a href="/nfts">My NFTs</a>
         </div>
         <div class="fast-links-item">
           <div class="h5">Linkdrop</div>

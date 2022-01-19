@@ -3,7 +3,7 @@
     <div class="container">
       <div class="share-gifts">
         <div class="h1">
-          选择一个NFT盲盒礼品链接分享给好友
+          Choose an NFT Blind Box Gift Link Share with friends
         </div>
         <div class="links">
           <div class="tip">Shareable links</div>
@@ -121,8 +121,8 @@ export default {
   .h1 {
     width: 567px;
     font-weight: 500;
-    font-size: 46px;
-    line-height: 67px;
+    font-size: 40px;
+    line-height: 48px;
     margin-bottom: 25px;
   }
   .total {
@@ -181,12 +181,15 @@ export default {
 .mobile {
   .share-gifts {
     width: 100%;
+    background: url(../../../assets/banner_mb.png) no-repeat top center;
+    background-size: 100% auto;
     height: auto;
     padding: 20px;
     .h1 {
-      font-size: 30px;
+      font-size: 18px;
       width: 100%;
-      line-height: 45px;
+      line-height: 25px;
+      margin-bottom: 0;
     }
     .links {
       width: 100%;
@@ -197,13 +200,16 @@ export default {
     .links-item {
       .ant-input-affix-wrapper {
         width: 47%;
-        height: 48px;
+        height: 35px;
+        border: 0;
         .ant-input{
           width: 100%;
+          height: 35px;
         }
       }
       & > .ant-input {
         width: 40%;
+        height: 35px;
       }
     }
   }
