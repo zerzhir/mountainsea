@@ -9,8 +9,8 @@
           Join an Exclusive Community of Mountainsea Metaverse early adopters and BUIDLers. <br />
           <span>Release Date: January 22, 2022</span>
         </p>
-        <!-- <div class="btn" @click="handleBuy">{{ wallet.signedIn ? 'Buy Your First' : 'Connect Wallet' }}</div> -->
-        <a-popover>
+        <div class="btn" @click="handleBuy">{{ wallet.signedIn ? 'Buy Your First' : 'Connect Wallet' }}</div>
+        <!-- <a-popover>
           <template slot="content">
             <a
               class="btn btn-account"
@@ -26,7 +26,7 @@
             >
           </template>
           <a class="btn">Apply Whitelist</a>
-        </a-popover>
+        </a-popover> -->
 
         <div class="total">
           <div class="total-item">
@@ -38,15 +38,15 @@
             WHITE<br /> TIGER
           </div>
           <div class="total-item">
-           <b>500</b><br />
+            <b>500</b><br />
             AZURE<br /> DROGEN
           </div>
           <div class="total-item">
-           <b>500</b><br />
+            <b>500</b><br />
             VERMILION<br /> BIRD
           </div>
           <div class="total-item">
-           <b>500</b><br />
+            <b>500</b><br />
             BLACK <br />TORTOISE
           </div>
         </div>
@@ -67,7 +67,12 @@ export default {
         this.$router.push('/nfts')
         return
       }
-      this.wallet.signIn()
+       try {
+        this.wallet.signIn()
+      } catch (err) {
+        console.log(err)
+        this.$message.warning('Please wait for sale !')
+      }
     }
   }
 }

@@ -12,7 +12,7 @@
         <div class="container">
           <div class="linkdrop">
             <div class="h3">You don't have a Linkdrop link yet</div>
-            <div class="btn">Click<span>"Generate Gift Link"</span>to buy</div>
+            <div class="btn">Click<span>"Generate gift Links"</span>to buy</div>
             <div class="clearfix"></div>
             <share-links />
           </div>
@@ -43,7 +43,7 @@ export default {
   },
   created () {
     if (!localStorage.undefined_wallet_auth_key) {
-      this.$message.warning('请先连接钱包')
+      this.$message.warning('Please connect wallet first')
       this.$router.push('/')
     }
   },

@@ -179,7 +179,7 @@ export default {
         return
       }
       window.scrollTo(0, 0)
-      this.$message.warning('请先连接钱包')
+      this.$message.warning('Please connect wallet first')
     },
     funcDay () {
       const deadline = new Date('2022/01/22 11:00:00').valueOf()

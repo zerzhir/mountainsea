@@ -44,18 +44,18 @@
               fontSize: '23px'
             }"
           /> -->
-            <!-- <a-tooltip
-            placement="topLeft"
-            title="Log Out"
-            v-if="account.accountId"
-          ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
-          > -->
-            <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
-            <a
+            <a-tooltip
+              placement="topLeft"
+              title="Log Out"
+              v-if="account.accountId"
+            ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
+            >
+            <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button>
+            <!-- <a
               href="https://wallet.near.org"
               target="_blank"
             ><a-button type="primary">Register NEAR Wallet</a-button></a
-            >
+            > -->
           </template>
           <a-icon
             type="bars"
@@ -81,18 +81,18 @@
                 fontWeight: '700'
               }"
             />
-            <!-- <a-tooltip
-            placement="topLeft"
-            title="Log Out"
-            v-if="account.accountId"
-          ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
-          > -->
-            <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
-            <a
+            <a-tooltip
+              placement="topLeft"
+              title="Log Out"
+              v-if="account.accountId"
+            ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
+            >
+            <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button>
+            <!-- <a
               href="https://wallet.near.org"
               target="_blank"
             ><a-button type="primary">Register NEAR Wallet</a-button></a
-            >
+            > -->
           </div>
           <a-anchor :affix="false" :showInkInFixed="false">
             <template v-for="(item, index) in menuList">
@@ -215,8 +215,12 @@ export default {
       this.$router.push('/')
     },
     handleSignin () {
-      console.log(this.wallet)
-      this.wallet.signIn()
+      try {
+        this.wallet.signIn()
+      } catch (err) {
+        console.log(err)
+        this.$message.warning('Please wait for sale !')
+      }
     },
     handleSignout () {
       this.account.accountId && this.wallet.signOut()
