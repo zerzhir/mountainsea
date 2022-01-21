@@ -9,7 +9,7 @@
             In each world, JuanJuan Princess transforms into a different identity and meets strange and unexpected friends. In the different world no. 1 - The world of Mountain&Sea, roll through the endless empty darkness, suddenly see a strange mountain of fresh grass, god beast feng shuttle between heaven and earth, beautiful.
           </p>
           <p>
-            Mountain&Sea metaverse is a collection of 6024 NFT randomly and programmatically generated on the blockchain. Including JuanJuan 24, four god beast azure drogen, white tiger, vermilion bird, black tortoise 1500 each.
+            Mountain&Sea metaverse is a collection of 2022 NFT randomly and programmatically generated on the blockchain. Including JuanJuan 24, four god beast azure drogen, white tiger, vermilion bird, black tortoise 1500 each.
           </p>
         </div>
         <div class="right">

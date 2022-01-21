@@ -10,7 +10,7 @@
             <div class="answers-item">
               <div class="h4">How do get involved?</div>
               <p>
-                Mountainsea launched on January 22, 2022, with a total of 6024 NFT avatars issued
+                Mountainsea launched on January 22, 2022, with a total of 2022 NFT avatars issued
               </p>
             </div>
 
@@ -109,6 +109,7 @@ export default {}
   .answers {
     flex-wrap: wrap;
     background: none;
+    margin-bottom: 30px;
     &-item {
       width: 100%;
       text-align: center;

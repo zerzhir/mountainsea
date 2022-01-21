@@ -101,6 +101,7 @@ export default {}
   .roadmap {
     flex-wrap: wrap;
     background: none;
+    padding-bottom: 0;
     &-item {
       width: 100%;
       height: auto;

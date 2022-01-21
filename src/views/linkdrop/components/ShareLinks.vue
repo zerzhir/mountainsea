@@ -45,3 +45,14 @@ export default {
   padding: 26px 0 15px;
 }
 </style>
+<style lang="less">
+.mobile {
+  .share-links{
+    flex-wrap: wrap;
+    width: 80%;
+    img{
+      width: 22px;
+    }
+  }
+}
+</style>

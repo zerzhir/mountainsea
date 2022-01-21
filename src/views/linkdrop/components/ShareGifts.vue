@@ -6,15 +6,15 @@
           Choose an NFT Blind Box Gift Link Share with friends
         </div>
         <div class="links">
-          <div class="tip">Shareable links</div>
-          <div class="tip">Who did I share this link with?</div>
+          <div class="tip" v-if="!isMobile">Shareable links</div>
+          <div class="tip" v-if="!isMobile">Who did I share this link with?</div>
           <a-radio-group v-model="linkIndex">
-            <div class="links-item" v-for="(item, index) in linkdrops" :key="item.id">
+            <div class="links-item" v-for="(item, index) in linkdrops.slice(0,3)" :key="item.id">
               <a-radio :value="index" />
               <a-input :value="item.link">
                 <a-icon type="copy" slot="suffix" theme="filled" @click="handleCopy(item.link)" />
               </a-input>
-              <a-input v-model="item.text" @blur="handleBlur" />
+              <a-input v-model="item.text" @blur="handleBlur" placeholder="Who did I share this link with?"/>
             </div>
           </a-radio-group>
           <a class="btn" @click="handleSave" :href="saveUri" download="link-drops.txt" target="_blank">
@@ -30,7 +30,9 @@
 </template>
 <script>
 import ShareLinks from './ShareLinks'
+import { deviceMixin } from '@/store/device-mixin'
 export default {
+  mixins: [deviceMixin],
   props: {
     links: {
       type: Array,
@@ -181,42 +183,79 @@ export default {
 .mobile {
   .share-gifts {
     width: 100%;
-    background: url(../../../assets/banner_mb.png) no-repeat top center;
-    background-size: 100% auto;
+    min-height: 235px;
+    background: url(../../../assets/linkdrop_mb.png) no-repeat top center;
+    background-size: 100% 100%;
     height: auto;
-    padding: 20px;
+    padding: 20px 10px;
+    margin-bottom: 30px;
     .h1 {
-      font-size: 18px;
-      width: 100%;
+      font-size: 16px;
+      width: 210px;
       line-height: 25px;
-      margin-bottom: 0;
+      margin-bottom: 15px;
     }
     .links {
       width: 100%;
       .tip{
         width: 50%;
       }
+      .btn{
+        position: absolute;
+        right: 0;
+        top: 10px;
+        background: #CF9B2D;
+        font-size: 12px;
+        border: 1px solid #fff;
+        color: #fff;
+        width: 60px;
+        height: 25px;
+        line-height: 25px;
+      }
     }
     .links-item {
+      flex-wrap: wrap;
       .ant-input-affix-wrapper {
-        width: 47%;
-        height: 35px;
+        width: 50%;
+        height: 25px;
         border: 0;
+        border-radius: 5px;
         .ant-input{
           width: 100%;
-          height: 35px;
+          height: 25px;
+          border-radius: 5px;
+          font-size: 9px;
+          padding-left: 5px;
         }
       }
       & > .ant-input {
-        width: 40%;
-        height: 35px;
+        width: 50%;
+        height: 25px;
+        margin-left: 24px;
+        margin-top: 5px;
+        border-radius: 5px;
+        font-size: 9px;
+        padding-left: 5px;
+        padding-right: 2px;
+      }
+      .anticon-copy{
+        color: #D49101;
+        text-shadow:0 0 2px #fff;
       }
     }
   }
   .total{
-    width: 100%;
-    position: relative;
-    bottom: 0;
+   width: 130px;
+   position: absolute;
+   right: 10px;
+   bottom: -10px;
+   left: auto;
+   .share-links{
+     a{
+       margin-bottom: 10px;
+     }
+   }
+
   }
 }
 </style>

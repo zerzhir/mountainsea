@@ -2,11 +2,11 @@
   <div class="row" id="level">
     <div class="container">
       <div class="title title-black">
-        Types of roles： 6024
+        Types of roles： 2022
       </div>
       <div class="issues">
         <div class="issues-item">
-          <div class="h5">24</div>
+          <div class="h5">22</div>
           <div class="star">
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
@@ -20,7 +20,7 @@
           <span>COLLECTION</span>
         </div>
         <div class="issues-item">
-          <div class="h5">147</div>
+          <div class="h5">41</div>
           <div class="star">
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
@@ -33,7 +33,7 @@
           <span>RARE</span>
         </div>
         <div class="issues-item">
-          <div class="h5">235</div>
+          <div class="h5">80</div>
           <div class="star">
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
@@ -45,7 +45,7 @@
           <span>EXCLUSIVE</span>
         </div>
         <div class="issues-item">
-          <div class="h5">1376</div>
+          <div class="h5">461</div>
           <div class="star">
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
@@ -57,7 +57,7 @@
           <span>SPECIAL</span>
         </div>
         <div class="issues-item">
-          <div class="h5">2732</div>
+          <div class="h5">911</div>
           <div class="star">
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />
@@ -67,7 +67,7 @@
           <span>FANCY</span>
         </div>
         <div class="issues-item">
-          <div class="h5">1518</div>
+          <div class="h5">507</div>
           <div class="star">
             <img src="../../../assets/star-lg.png" alt="" />
             <img src="../../../assets/star-lg.png" alt="" />

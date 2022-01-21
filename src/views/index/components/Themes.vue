@@ -280,6 +280,9 @@ export default {
         margin: 0 -10px;
       }
     }
+    &-btn{
+      margin: 20px auto 40px;
+    }
   }
 }
 </style>

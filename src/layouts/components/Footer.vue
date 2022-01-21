@@ -148,7 +148,7 @@ export default {
       margin-top: 40px;
       margin-bottom: 20px;
       padding-left: 20px;
-      // text-align: center;
+      text-align: center;
       p{
         width: 100%;
       }
@@ -158,7 +158,7 @@ export default {
       justify-content: space-around;
       &-item{
         width: 25%;
-        // text-align: center;
+        text-align: center;
       }
     }
   }

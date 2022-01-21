@@ -1,5 +1,20 @@
 <template>
-  <div class="row">
+  <a-affix :offset-bottom="0" v-if="isMobile">
+    <div class="row">
+      <div class="container">
+        <div class="buymore">
+          <buymore-item title="Buy more" />
+          <buymore-item title="Generate gift links" :is-linkdrop="true" />
+          <div class="buymore-item">
+            <div class="h2" @click="toggleModal">Send NFT</div>
+            <img src="../../assets/j1.png" alt="" />
+          </div>
+        </div>
+        <modal-send ref="send"/>
+      </div>
+    </div>
+  </a-affix>
+  <div class="row" v-else>
     <div class="container">
       <div class="buymore">
         <buymore-item title="Buy more" />
@@ -16,7 +31,9 @@
 <script>
 import BuymoreItem from './BuymoreItem'
 import ModalSend from './ModalSend'
+import { deviceMixin } from '@/store/device-mixin'
 export default {
+  mixins: [deviceMixin],
   components: {
     BuymoreItem,
     ModalSend
@@ -142,12 +159,49 @@ export default {
   .buymore {
     flex-wrap: wrap;
     justify-content: space-around;
+    background: #e5e5e5;
+    padding: 10px 0;
+    margin: 15px 0;
     &-item{
-      width: 100%;
+      width: 46%;
       height: auto;
       margin-bottom: 50px;
-      padding-left: 40px;
+      padding-left: 20px;
       padding-right: 10px;
+      margin-left: 10px;
+      &:last-child{
+        width: 100%;
+        img{
+          display: none;
+        }
+      }
+      .h2{
+        width: auto;
+        margin-left: -20px;
+        margin-right: 0;
+        height: 38px;
+        line-height: 38px;
+        font-size: 14px;
+
+      }
+      span{
+        font-size: 9px;
+        letter-spacing: 0;
+
+      }
+      .round{
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        margin-left: -25px;
+      }
+      .one,.ten{
+        padding-top: 40px;
+      }
+      .num{
+        font-size: 24px;
+      }
     }
   }
 }

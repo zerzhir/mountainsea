@@ -118,7 +118,8 @@ export default {
     border-radius: 35px;
     flex-wrap: wrap;
     height: auto;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
     .left,.right{
       width: 100%;
     }
@@ -129,16 +130,20 @@ export default {
       }
       .h2{
         font-size: 18px;
+        line-height: 60px;
       }
     }
     .right{
       .h3{
-        font-size: 12px;
+        font-size: 11px;
+        line-height: 40px;
         .btn{
-          width: 160px;
-          height: 50px;
-          line-height: 50px;
-          font-size: 12px;
+          float: right;
+          margin-left: 0;
+          width: 140px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 11px;
         }
       }
       img{

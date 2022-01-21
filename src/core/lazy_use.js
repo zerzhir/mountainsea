@@ -52,7 +52,8 @@ import {
   Pagination,
   Timeline,
   Carousel,
-  Anchor
+  Anchor,
+  Affix
 } from 'ant-design-vue'
 import Viser from 'viser-vue'
 
@@ -113,6 +114,7 @@ Vue.use(Pagination)
 Vue.use(Timeline)
 Vue.use(Carousel)
 Vue.use(Anchor)
+Vue.use(Affix)
 Vue.prototype.$confirm = Modal.confirm
 Vue.prototype.$message = message
 Vue.prototype.$notification = notification

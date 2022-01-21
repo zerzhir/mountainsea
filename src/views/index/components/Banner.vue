@@ -30,23 +30,23 @@
 
         <div class="total">
           <div class="total-item">
-            <b>24</b> <br />
+            <b>22</b> <br />
             JUAN<br /> JUAN
           </div>
           <div class="total-item">
-            <b>1.5K</b><br />
+            <b>500</b><br />
             WHITE<br /> TIGER
           </div>
           <div class="total-item">
-            <b>1.5K</b><br />
+           <b>500</b><br />
             AZURE<br /> DROGEN
           </div>
           <div class="total-item">
-            <b>1.5K</b><br />
+           <b>500</b><br />
             VERMILION<br /> BIRD
           </div>
           <div class="total-item">
-            <b>1.5K</b><br />
+           <b>500</b><br />
             BLACK <br />TORTOISE
           </div>
         </div>
@@ -149,20 +149,20 @@ export default {
     padding: 15px;
     .h1{
       font-size: 17px;
-      margin-bottom: 10px;
-      line-height: 25px;
+      margin-bottom: 8px;
+      line-height: 18px;
     }
     p{
       width: 80%;
       font-size: 10px;
-      line-height: 18px;
+      line-height: 16px;
       span{
         padding: 10px 0;
       }
     }
     .btn{
-      height: 20px;
-      line-height: 20px;
+      height: 26px;
+      line-height: 26px;
       font-size: 10px;
       width: auto;
       padding: 0 15px;
@@ -170,7 +170,7 @@ export default {
     .total{
       position: relative;
       width: 76%;
-      margin-top: 10px;
+      margin-top: 20px;
       font-size: 9px;
       justify-content: space-between;
       &-item{

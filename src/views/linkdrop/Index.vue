@@ -90,3 +90,31 @@ export default {
   }
 }
 </style>
+<style lang="less">
+.mobile {
+  .row-linkdrop {
+    background: #54c4f6 url(../../assets/linkdrop_bg_mb.png) no-repeat top center;
+    background-size: 100% auto;
+  }
+  .linkdrop-banner{
+    height: auto;
+    img{
+      width: 160px;
+      margin: 18px 0;
+    }
+
+  }
+  .linkdrop{
+    .h3{
+      font-size: 20px;
+      padding: 15px 0;
+    }
+    .btn{
+      font-size: 12px;
+      width: 210px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+}
+</style>

@@ -16,25 +16,26 @@
           </a-anchor>
         </div>
         <div class="search">
-          <a href="https://discord.gg/cMeSWKQ66p" target="blank">
-            <z-icon
-              type="icon-discord"
-              :style="{
-                color: '#D49101',
-                fontSize: '24px'
-              }"
-            />
-          </a>
-          <a href="https://twitter.com/Mountainsea_nft" target="blank">
-            <a-icon
-              type="twitter"
-              :style="{
-                color: '#D49101',
-                fontSize: '27px'
-              }"
-            />
-          </a>
           <template v-if="!isMobile">
+            <a href="https://discord.gg/cMeSWKQ66p" target="blank">
+              <z-icon
+                type="icon-discord"
+                :style="{
+                  color: '#D49101',
+                  fontSize: '24px'
+                }"
+              />
+            </a>
+            <a href="https://twitter.com/Mountainsea_nft" target="blank">
+              <a-icon
+                type="twitter"
+                :style="{
+                  color: '#D49101',
+                  fontSize: '27px'
+                }"
+              />
+            </a>
+
             <!-- <a-icon
             type="bell"
             theme="filled"
@@ -50,7 +51,11 @@
           ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
           > -->
             <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
-            <a href="https://wallet.near.org" target="_blank"><a-button type="primary">Register NEAR Wallet</a-button></a>
+            <a
+              href="https://wallet.near.org"
+              target="_blank"
+            ><a-button type="primary">Register NEAR Wallet</a-button></a
+            >
           </template>
           <a-icon
             type="bars"
@@ -64,8 +69,31 @@
           />
         </div>
       </div>
-      <a-drawer :visible="showDrawer" placement="right" @close="toggleDrawer">
+      <a-drawer :visible="showDrawer" placement="right" @close="toggleDrawer" :closable="false" :width="280">
         <div class="menu menu-drawer">
+          <div class="menu-head">
+            <a-icon
+              type="bars"
+              @click="toggleDrawer"
+              :style="{
+                color: '#000000',
+                fontSize: '24px',
+                fontWeight: '700'
+              }"
+            />
+            <!-- <a-tooltip
+            placement="topLeft"
+            title="Log Out"
+            v-if="account.accountId"
+          ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
+          > -->
+            <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
+            <a
+              href="https://wallet.near.org"
+              target="_blank"
+            ><a-button type="primary">Register NEAR Wallet</a-button></a
+            >
+          </div>
           <a-anchor :affix="false" :showInkInFixed="false">
             <template v-for="(item, index) in menuList">
               <a-anchor-link
@@ -76,18 +104,30 @@
               />
             </template>
           </a-anchor>
-          <!-- <a-tooltip
-            placement="topLeft"
-            title="Log Out"
-            v-if="account.accountId"
-          ><a-button type="primary" @click="handleSignout">{{ account.accountId }} </a-button></a-tooltip
-          > -->
-          <!-- <a-button type="primary" @click="handleSignin" v-else>Connect Wallet</a-button> -->
-          <a href="https://wallet.near.org" target="_blank"><a-button type="primary">Register NEAR Wallet</a-button></a>
+          <div class="menu-foot">
+            <a href="https://discord.gg/cMeSWKQ66p" target="blank">
+              <z-icon
+                type="icon-discord"
+                :style="{
+                  color: '#5865F2',
+                  fontSize: '24px'
+                }"
+              />
+            </a>
+            <a href="https://twitter.com/Mountainsea_nft" target="blank">
+              <a-icon
+                type="twitter"
+                :style="{
+                  color: '#1DA1F2',
+                  fontSize: '27px'
+                }"
+              />
+            </a>
+          </div>
         </div>
       </a-drawer>
     </a-row>
-    <div :style="isMobile?'':'min-height: 600px'">
+    <div :style="isMobile ? '' : 'min-height: 600px'">
       <router-view />
     </div>
     <buymore v-if="$route.name !== 'Index'" />
@@ -256,25 +296,30 @@ export default {
 </style>
 <style lang="less">
 .mobile {
-  .row-header{
-    padding-top: 15px;
+  .row-header {
+    padding-top: 10px;
     margin-bottom: 15px;
   }
   .header {
     height: 45px;
     line-height: 45px;
-    margin-top: 0;
+    margin-top: -5px;
     .logo {
       height: 35px;
       width: 130px;
       background-size: contain;
+      margin: 0 auto;
     }
   }
 }
 .menu-drawer {
-  padding: 20px 0;
+  padding: 0;
+  overflow: hidden;
+  margin: 0 -24px;
   .ant-anchor-wrapper {
     background: none;
+    padding-top: 20px;
+    border-top: 1px solid #d8d9e8;
     a {
       font-size: 16px;
       color: #d59101;
@@ -295,15 +340,47 @@ export default {
     .ant-anchor-link {
       width: 100%;
       line-height: 35px;
+      height: 49px;
+
+      a {
+        color: #3f4246;
+      }
+    }
+    .ant-anchor-link-active {
+      background: #f4f4f4;
+      a {
+        color: #d59101;
+      }
     }
   }
   .ant-btn {
     height: 45px;
     line-height: 45px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     margin-left: 20px;
     margin: 0;
+  }
+  .menu-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 20px;
+  }
+  .menu-foot {
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    .anticon {
+      margin: 0 15px;
+      width: 52px;
+      height: 52px;
+      line-height: 62px;
+      background: #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+      border-radius: 100%;
+    }
   }
 }
 </style>
