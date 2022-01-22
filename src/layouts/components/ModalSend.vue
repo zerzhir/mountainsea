@@ -22,7 +22,6 @@ export default {
         nft: undefined,
         account: ''
       },
-
       rules: {
         nft: [
           {
@@ -65,7 +64,7 @@ export default {
             return
           }
 
-          if (this.form.account === this.account.accountId) {
+          if (this.form.account === this.account.accountId || !this.form.account.includes('.near') || !this.form.account.includes('.testnet')) {
             this.$message.warning('Please enter the receiving NEAR account')
             return
           }
