@@ -44,20 +44,6 @@ export default {
       form: {
         nft: undefined,
         account: ''
-      },
-      rules: {
-        nft: [
-          {
-            required: true,
-            message: '请输入发送的NFT Token ID'
-          }
-        ],
-        account: [
-          {
-            required: true,
-            message: '请输入接收账户'
-          }
-        ]
       }
     }
   },

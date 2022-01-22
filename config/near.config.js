@@ -1,4 +1,4 @@
-const contractName = '' // zodiac.tenk.near'
+const contractName = 'pandas.tenk.testnet' // mountainsea.tenk.near
 
 export default function getConfig () {
   let config = {
@@ -34,11 +34,11 @@ export default function getConfig () {
   }
 
   config = {
-    ...config,
-    networkId: 'mainnet',
-    nodeUrl: 'https://rpc.mainnet.near.org',
-    walletUrl: 'https://wallet.near.org',
-    helperUrl: 'https://helper.mainnet.near.org'
+    ...config
+    // networkId: 'mainnet',
+    // nodeUrl: 'https://rpc.mainnet.near.org',
+    // walletUrl: 'https://wallet.near.org',
+    // helperUrl: 'https://helper.mainnet.near.org'
   }
 
   return config

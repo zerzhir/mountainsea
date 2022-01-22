@@ -37,7 +37,7 @@
           </div>
           <div class="right">
             <template v-for="(itm, idx) in info.attributes || info">
-              <span :key="idx"> {{ idx }} : {{ itm }} </span>
+              <span :key="idx"> {{ itm.trait_type }} : {{ itm.value }} </span>
             </template>
           </div>
         </div>

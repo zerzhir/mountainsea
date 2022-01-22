@@ -68,7 +68,7 @@ export default {
         return
       }
       if (!this.count) {
-        this.$message.warning('请选择数量')
+        this.$message.warning('Please select quantity')
         return
       }
       if (!this.isLinkdrop) {
