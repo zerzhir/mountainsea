@@ -64,7 +64,11 @@ export default {
             return
           }
 
-          if (this.form.account === this.account.accountId || !this.form.account.includes('.near') || !this.form.account.includes('.testnet')) {
+          if (this.form.account === this.account.accountId) {
+            this.$message.warning('Can not send to yourself')
+            return
+          }
+          if (!this.form.account.includes('.near')) {
             this.$message.warning('Please enter the receiving NEAR account')
             return
           }
